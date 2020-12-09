@@ -1,26 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Oxanium|PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --primary-color: rgb(255, 159, 95);
-  --select-color: dodgerblue;
-  --success: rgb(15, 158, 2);
-  --danger: rgb(255, 159, 95);
+  --primary-color: #7e685a;
+  --select-color: rgb(118, 162, 192);
+  --success: #93be4e;
+  --danger: #e7717d;
 }
 
 body {
   margin: 0;
-  font-family: PT Mono, sans-serif;
+  font-family: "Architects Daughter", sans-serif;
   overflow: hidden;
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: #dec8ff;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2393ff48' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-  color: white;
+  background-color: #c2b9b0;
+  color: rgb(36, 31, 31);
 }
 
 .game-container {
@@ -32,12 +31,13 @@ body {
   /* background: whitesmoke; */
   user-select: none;
   margin-top: 100px;
+  border-radius: 20px;
 }
 
 .header {
   background: var(--primary-color);
   color: white;
-  font-family: Oxanium, sans-serif;
+  font-family: "Architects Daughter", sans-serif;
   font-size: 24px;
   text-shadow: 1px 2px 2px black;
   letter-spacing: 2px;
@@ -45,6 +45,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .card {
@@ -62,10 +64,14 @@ input[type="radio"] {
   cursor: pointer;
   z-index: 2;
 }
+.radio-container:hover {
+  transform: scale(1.01);
+}
 
 .selection-container {
   position: relative;
   top: 65px;
+  border-radius: 20px;
 }
 
 .radio-container {
@@ -75,6 +81,9 @@ input[type="radio"] {
   cursor: pointer;
   border: 2px solid black;
   border-radius: 5px;
+}
+.radio-container:hover {
+  transform: scale(1.01);
 }
 
 label {
@@ -161,11 +170,13 @@ label {
 .selection-footer {
   width: 100%;
   height: 90px;
-  background: rgba(0, 0, 0, 1);
+  background: #7e685a;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .item-footer {
@@ -177,7 +188,7 @@ button {
   height: 50px;
   border-radius: 5px;
   font-size: 25px;
-  font-family: Oxanium, sans-serif;
+  font-family: "Architects Daughter", sans-serif;
   color: white;
   border: none;
   outline: none;
@@ -209,6 +220,9 @@ button:active {
 .play-again {
   width: 90%;
   background: var(--primary-color);
+}
+.start:hover {
+  transform: scale(1.05);
 }
 
 /* Countdown Page ---------------------- */

@@ -45,7 +45,7 @@ let valueY = 0;
 function bestScoresToDOM() {
   bestScores.forEach((bestScore, index) => {
     const bestScoreEl = bestScore;
-    bestScoreEl.textContent = `${bestScoreArray[index].bestScore}`;
+    bestScoreEl.textContent = `${bestScoreArray[index].bestScore}s`;
   });
 }
 
